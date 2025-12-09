@@ -1,0 +1,76 @@
+# Pliki środowiskowe
+.env
+/config.local.php
+/includes/config.local.php
+
+# Zależności
+/vendor/
+/node_modules/
+composer.lock
+package-lock.json
+
+# Logi
+*.log
+/logs/
+/error.log
+/access.log
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Pliki IDE
+.idea/
+.vscode/
+*.sublime-*
+*.swp
+*.swo
+
+# Pliki cache
+/cache/
+/tmp/
+/temp/
+/sessions/
+
+# Pliki tymczasowe
+*.tmp
+*.temp
+
+# Pliki kopii zapasowych
+*.bak
+*.backup
+
+# Pliki konfiguracyjne z hasłami
+/config.php.backup
+/includes/config.php.backup
+
+# Pliki bazy danych
+*.sql
+*.sqlite
+*.sqlite3
+
+# Pliki uploadów
+/uploads/
+/media/
+/files/
+
+# Pliki testowe
+/test_*.php
+/tests/
+coverage/
+
+# Dokumentacja wygenerowana
+/docs/
+/api-docs/
+
+# Pliki specyficzne dla home.pl
+/home/
+/domain/
+/public_html/
+/www/
+
+# Pliki tymczasowe serwera
+*.cache
+*.tmp
+*.temp

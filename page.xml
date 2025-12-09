@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="request">
+		<field name="produkt" type="list"
+			label="Produkt"
+			description="Wybierz odpowiedni produkt z listy."
+			required="true"
+			default=""
+		>
+			<option value="">		Wybierz...					</option>
+			<option value="kh">	kredyty hipoteczne		</option>
+			<option value="kg">	kredyty gotówkowe			</option>
+			<option value="ks">	kredyty samochodowe		</option>
+			<option value="ph">	pożyczki hipoteczne		</option>
+			<option value="kdf">	kredyty dla firm			</option>
+			<option value="lb">	lokaty bankowe				</option>
+			<option value="lp">	lokaty progresywne		</option>
+			<option value="pl">	polisolokaty				</option>
+			<option value="lbs">	lokaty strukturyzowane	</option>
+			<option value="ko">	konta osobiste				</option>
+			<option value="kosz">konta oszczędnościowe	</option>
+			<option value="kk">	karty kredytowe			</option>
+			<option value="lis">	leasing						</option>
+			<option value="chw">	chwilówki					</option>
+		</field>
+	</fieldset>
+	<fieldset name="PARAMS_COMPERIA">
+		<field type="spacer" hr="true" />
+		<field type="spacer" label="Lista" />
+		<field name="tekst_list_top"
+			type="textarea"
+			default=""
+			label="Nad"
+			description="Tekst nad listą wyników"
+			filter="raw"
+		/>
+		<field name="tekst_list_bottom"
+			type="textarea"
+			default=""
+			label="Pod"
+			description="Tekst pod listą wyników"
+			filter="raw"
+		/>
+		<field name="tableCaption"
+			type="list"
+			label="Nagłówek tabeli"
+			description="Czy pokazywać element &lt;caption&gt; tabeli"
+			default="0"
+		>
+			<option value="1">Tak</option>
+			<option value="0">Nie</option>
+		</field>
+		<field name="showFormOnListDef"
+			type="list"
+			label="Co pokazywać(domyślnie)?"
+			description="Co pokazać, jeśli użytkownik nie wybrał żadnych opcji filtrowania"
+			default=""
+		>
+			<option value="">Domyślnie</option>
+			<option value="0">Formularz i listę wyników</option>
+			<option value="1">Listę wyników</option>
+			<option value="2">Formularz</option>
+		</field>
+		<field name="showFormOnListSearch"
+			type="list"
+			label="Co pokazywać(wyszukanie)?"
+			description="Co pokazać, jeśli użytkownik wyszukał rozwiązania dla siebie. Nie można niepokazać wyników"
+			default=""
+		>
+			<option value="">Domyślnie</option>
+			<option value="0">Formularz i listę wyników</option>
+			<option value="1">Listę wyników</option>
+		</field>
+		
+		<field type="spacer" hr="true" />
+		<field type="spacer" label="Szczegóły" />
+		<field name="tekst_szczegoly_top"
+			type="textarea"
+			default=""
+			label="Nad"
+			description="Tekst nad listą wyników"
+			filter="raw"
+		/>
+		<field name="tekst_szczegoly_bottom"
+			type="textarea"
+			default=""
+			label="Pod"
+			description="Tekst pod listą wyników"
+			filter="raw"
+		/>
+	</fieldset>
+</config>

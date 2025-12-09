@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="communication"
+		label="COM_COMPERIA_CONF_COMMUNICATION_LABEL"
+		description="COM_COMPERIA_CONF_COMMUNICATION_DESC"
+	>
+		<field name="api"
+			type="text"
+			default="!KLUCZ API!"
+			label="COM_COMPERIA_CONF_API_LABEL"
+			description="COM_COMPERIA_CONF_API_DESC"
+		/>
+		
+		<field name="serwer"
+			type="text"
+			default="https://www.comperialead.pl/apicl/"
+			label="COM_COMPERIA_CONF_SERWER_LABEL"
+			description="COM_COMPERIA_CONF_SERWER_DESC"
+		/>
+		
+		<field name="timeout"
+			type="integer"
+			default="10"
+			label="COM_COMPERIA_CONF_TIMEOUT_LABEL"
+			description="COM_COMPERIA_CONF_TIMEOUT_DESC"
+			first="0"
+			last="30"
+			step="1"
+		/>
+
+		<field name="format"
+			type="list"
+			label="COM_COMPERIA_CONF_FORMAT_LABEL"
+			description="COM_COMPERIA_CONF_FORMAT_DESC"
+			default="serialize"
+		>
+			<option value="serialize">SERIALIZE</option>
+			<option value="json">JSON</option>
+		</field>
+		
+		<field name="cacheTime"
+			type="list"
+			label="COM_COMPERIA_CONF_CACHETIME_LABEL"
+			description="COM_COMPERIA_CONF_CACHETIME_DESC"
+			default="86400"
+		>
+			<option value="3600"		>1 godzina</option>
+			<option value="21600"	>6 godzin</option>
+			<option value="43200"	>12 godzin</option>
+			<option value="86400"	>1 dzień</option>
+			<option value="172800"	>2 dni</option>
+		</field>
+		
+		<field name="limit"
+			type="text"
+			default="10"
+			label="COM_COMPERIA_CONF_LIMIT_LBAEL"
+			description="COM_COMPERIA_CONF_LIMIT_DESC"
+			filter="integer"
+		/>
+		
+		<field type="spacer" name="turn_plugin_on" label="COM_COMPERIA_CONF_TURN_PLUGIN_ON_DESC"/>
+		
+	</fieldset>
+	<fieldset name="layout"
+		label="COM_COMPERIA_CONF_LAYOUT_LABEL"
+		description="COM_COMPERIA_CONF_LAYOUT_DESC"
+	>
+	
+		<field name="lead_layout"
+			type="list"
+			label="COM_COMPERIA_CONF_LEAD_LAYOUT_LABEL"
+			description="COM_COMPERIA_CONF_LEAD_LAYOUT_DESC"
+			default="default"
+		>
+			<option value=" default">Domyślnie</option>
+			<option value=" Lbutton deepGreen">Deep Green</option>
+			<option value=" Lbutton classicBlue">Classic Blue</option>
+			<option value=" Lbutton focusRed">Focus Red</option>
+		</field>
+		
+		<field name="lead_round"
+			type="list"
+			label="COM_COMPERIA_CONF_LEAD_ROUND_LABEL"
+			description="COM_COMPERIA_CONF_LEAD_ROUND_DESC"
+			default=" "
+		>
+			<option value=" ">JNO</option>
+			<option value=" round">JYES</option>
+		</field>
+	</fieldset>
+	<fieldset name="sef"
+		label="COM_COMPERIA_CONF_SEF_LABEL"
+		description="COM_COMPERIA_CONF_SEF_DESC"
+	>
+		<field name="remember_Itemid"
+			type="list"
+			label="COM_COMPERIA_CONF_REMEMBER_ITEMID_LABEL"
+			description="COM_COMPERIA_CONF_REMEMBER_ITEMID_DESC"
+			default="0"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="noMenu_404"
+			type="list"
+			label="COM_COMPERIA_CONF_NOMENU_404_LABEL"
+			description="COM_COMPERIA_CONF_NOMENU_404_DESC"
+			default="0"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="sef_advanced_link"
+			type="list"
+			label="COM_COMPERIA_CONF_SEF_ADVANCED_LINK_LABEL"
+			description="COM_COMPERIA_CONF_SEF_ADVANCED_LINK_DESC"
+			default="0"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="nolink"
+			type="list"
+			label="COM_COMPERIA_CONF_NOLINK_LABEL"
+			description="COM_COMPERIA_CONF_NOLINK_DESC"
+			default="0"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+	</fieldset>
+	<fieldset name="lists"
+		label="COM_COMPERIA_CONF_LISTS_LABEL"
+		description="COM_COMPERIA_CONF_LISTS_DESC"
+	>
+		<field name="showFormOnListDef"
+			type="list"
+			label="COM_COMPERIA_CONF_SHOWFORMONLISTDEF_LABEL"
+			description="COM_COMPERIA_CONF_SHOWFORMONLISTDEF_DESC"
+			default="0"
+		>
+			<option value="0">Formularz i listę wyników</option>
+			<option value="1">Listę wyników</option>
+			<option value="2">Formularz</option>
+		</field>
+		
+		<field name="showFormOnListSearch"
+			type="list"
+			label="COM_COMPERIA_CONF_SHOWFORMONLISTSEARCH_LABEL"
+			description="COM_COMPERIA_CONF_SHOWFORMONLISTSEARCH_DESC"
+			default="0"
+		>
+			<option value="0">Formularz i listę wyników</option>
+			<option value="1">Listę wyników</option>
+		</field>
+		
+		<field name="lead_target"
+			type="list"
+			label="COM_COMPERIA_CONF_LEAD_TARGET_LABEL"
+			description="COM_COMPERIA_CONF_LEAD_TARGET_DESC"
+			default="_popup"
+		>
+			<option value="_self">To samo okno</option>
+			<option value="_blank">Nowe okno przeglądarki</option>
+			<option value="_popup">popup</option>
+		</field>
+		
+		<field name="szczegoly_target"
+			type="list"
+			label="COM_COMPERIA_CONF_SZCZEGOLY_TARGET_LABEL"
+			description="COM_COMPERIA_CONF_SZCZEGOLY_TARGET_DESC"
+			default="_blank"
+		>
+			<option value="_self">To samo okno</option>
+			<option value="_blank">Nowe okno przeglądarki</option>
+			<option value="_popup">popup</option>
+		</field>
+		
+		<field name="wyniki_target"
+			type="list"
+			label="COM_COMPERIA_CONF_WYNIKI_TARGET_LABEL"
+			description="COM_COMPERIA_CONF_WYNIKI_TARGET_DESC"
+			default="_self"
+		>
+			<option value="_self">To samo okno</option>
+			<option value="_blank">Nowe okno przeglądarki</option>
+			<option value="_popup">popup</option>
+		</field>
+		
+		<field type="spacer" name="tmplComponentinTmpl" label="COM_COMPERIA_CONF_TMPLCOMPONENTINTMPL_LABEL"/>
+		
+	</fieldset>
+	<fieldset name="actions"
+		label="COM_COMPERIA_CONF_ACTIONS_LABEL"
+		description="COM_COMPERIA_CONF_ACTIONS_DESC"
+	>
+		<field name="szczegoly"
+			type="text"
+			default=""
+			label="COM_COMPERIA_CONF_SZCZEGOLY_LABEL"
+			description="COM_COMPERIA_CONF_SZCZEGOLY_DESC"
+		/>
+		
+		<field name="wniosek"
+			type="text"
+			default=""
+			label="COM_COMPERIA_CONF_WNIOSEK_LABEL"
+			description="COM_COMPERIA_CONF_WNIOSEK_DESC"
+		/>
+		
+		<field name="wyslij"
+			type="text"
+			default="Szukaj"
+			label="COM_COMPERIA_CONF_WYSLIJ_LABEL"
+			description="COM_COMPERIA_CONF_WYSLIJ_DESC"
+		/>
+		
+		<field name="szczegoly_powrot"
+			type="list"
+			label="COM_COMPERIA_CONF_SZCZEGOLY_POWROT_LABEL"
+			description="COM_COMPERIA_CONF_SZCZEGOLY_POWROT_DESC"
+			default="0"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+	</fieldset>
+</config>
